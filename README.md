@@ -1,6 +1,6 @@
 # Mono Color Segmentation Package
 
-This is a ROS2 package designed for generating segmentation masks from pixels having the same color in images. It's useful for applications such as identifying and segmenting areas with uniform color in visual data: its primary design purpose is to generate masks from the gazebo ground plane, which typically has a uniform color.
+This is a ROS2 package designed for generating segmentation masks from pixels having a specific color in images. It's useful for identifying and segmenting areas with uniform color in visual data: its primary design purpose is to generate masks from the gazebo ground plane, which typically has a uniform color.
 
 ![ezgif com-speed](https://github.com/kiwicampus/navigation2/assets/71234974/9144519f-49d2-4d7e-8ce0-55c2994dc27d)
 
@@ -40,9 +40,9 @@ ros2 launch mono_color_segmentation turtlebot_world_segmentation.launch.py
 
 ### Subscribers
 
-- /image_raw (sensor_msgs/msg/Image): Input image topic, should be a 3 channel color image. 
+- **`/image_raw`** (sensor_msgs/msg/Image): Input image topic, should be a 3 channel color image. 
 
 ### Publishers
 
-- /mask (sensor_msgs/msg/Image): Binary mask with 255 (white) for pixels matching the target color and 0 (black) for all other pixels.
-- /label_info (vision_msgs/msg/LabelInfo): Class map that assigns human readable name to class ids.
+- **`/mask`**` (sensor_msgs/msg/Image): Binary mask with 255 (white) for pixels matching the target color and 0 (black) for all other pixels.
+- **`/label_info`** (vision_msgs/msg/LabelInfo): Class map that assigns human readable names to class ids.
