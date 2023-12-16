@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>mono_color_segmentation</name>
+  <version>0.0.1</version>
+  <description>A ROS2 package for segmentation based on rgb colors</description>
+
+  <maintainer email="pedro@kiwibot.com">Pedro</maintainer>
+  <license>Apache-2.0</license>
+
+  <author email="pedro@kiwibot.com">Pedro</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>vision_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>opencv</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
