@@ -26,8 +26,6 @@ MonoColorSegmentation::MonoColorSegmentation(const rclcpp::NodeOptions & options
 
 void MonoColorSegmentation::imageCallback(const sensor_msgs::msg::Image::SharedPtr msg) {
     createMask(msg);
-    label_info_.header = msg->header;
-    
 }
 
 void MonoColorSegmentation::createMask(const sensor_msgs::msg::Image::SharedPtr& image) {
